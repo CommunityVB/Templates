@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "CommunityVB Contributors",
+  "classifications": [
+    "Common",
+    "Worker",
+    "Web"
+  ],
+  "name": "Worker Service",
+  "identity": "CommunityVB.Worker.Empty",
+  "groupIdentity": "CommunityVB",
+  "shortName": "vbworker",
+  "tags": {
+    "language": "VB",
+    "type": "project"
+  },
+  "sourceName": "WorkerService",
+  "preferNameDirectory": true,
+  "symbols": {
+    "targetframework": {
+      "type": "parameter",
+      "description": "The target framework for the project.",
+      "defaultValue": "net8.0",
+      "replaces": "$(FrameworkParameter)"
+    }
+  },
+  "primaryOutputs": [
+    { "path": "WorkerService.vbproj" }
+  ]
+}

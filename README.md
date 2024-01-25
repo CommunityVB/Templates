@@ -21,7 +21,7 @@ As a side note, you can easily filter the list to (for example) just show the av
 ## How to create a Template?
 
 - [How to create your own templates for dotnet new](https://devblogs.microsoft.com/dotnet/how-to-create-your-own-templates-for-dotnet-new/)
-- [Cutom templates for dotnet new](https://learn.microsoft.com/en-us/dotnet/core/tools/custom-templates)
+- [Custom templates for dotnet new](https://learn.microsoft.com/en-us/dotnet/core/tools/custom-templates)
 - Create templates for the CLI (Tutorial)
   - [Create an item template](https://learn.microsoft.com/en-us/dotnet/core/tutorials/cli-templates-create-item-template)
   - [Create a project template](https://learn.microsoft.com/en-us/dotnet/core/tutorials/cli-templates-create-project-template)

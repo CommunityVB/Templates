@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Title>Worker Service for VB</Title>
+    <PackageId>CommunityVB.WorkerService</PackageId>
+    <Description>The missing Worker Service template for VB.</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="content/**/*" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)../../assets/vb.png" Pack="true" PackagePath="\" />
+  </ItemGroup>
+
+</Project>
