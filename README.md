@@ -18,6 +18,18 @@ As a side note, you can easily filter the list to (for example) just show the av
 
 `dotnet new list --language VB`
 
+## Connect with us
+
+Many of us hang out on [Discord](https://discord.gg/Y8EH5fF6WG), some use [this invite](https://discord.gg/Y8EH5fF6WG) to join the conversations.
+
+## How to install templates from source?
+
+- Get a local copy of this repo; if you are new to git/GitHub, be sure to check out and utilize GitHub Desktop.
+- Once you have the files locally, use a terminal prompt and change to the subfolder containing the template(s) you want to install. (ie. `./src/avalonia`)
+- From this folder, type `dotnet new install ./`; this will install the all templates from the current folder.
+- To uninstall (or to update), `dotnet new uninstall ./` (and to update, repeat the `install`).
+- To my knowledge, these templates will be available in `dotnet new` as well as from within *Visual Studio*.
+
 ## How to create a Template?
 
 - [How to create your own templates for dotnet new](https://devblogs.microsoft.com/dotnet/how-to-create-your-own-templates-for-dotnet-new/)
@@ -31,15 +43,19 @@ As a side note, you can easily filter the list to (for example) just show the av
 - [How to Create Your .NET Project Template](https://auth0.com/blog/create-dotnet-project-template/)
 - [Creating .NET Project Templates](https://code-maze.com/dotnet-project-templates-creation/)
 
-## Publishing to Nuget?
-
-Once we have something working, need to come up with a plan to publish these to nuget so that they are easier to find and use by everyone. This includes such topics as versioning, release cadence, etc.
-
 ## Automated builds?
 
 To make life a whole lot simpler, really need to utilize GitHub actions to automate the build process and potentially releases; so the structure of the repo needs to consider this.
 
-## Lack of ideas?
+## Publishing to Nuget?
+
+Once we have something working, some testing under our belt and come up with a plan we will publish these to nuget so that they are easier to find and use by everyone. This includes such topics as versioning, release cadence, etc.
+
+## Want to contribute?
+
+We welcome suggestions, bug reports, pull requests, help with documentation, testing, etc. So if you are interested, please use the tools here on GitHub or speak with us over on [Discord](https://discord.gg/Y8EH5fF6WG).
+
+## Lack of ideas for new templates?
 
 Drop down to a terminal prompt and type `dotnet new list`... see one that doesn't have `VB` next to it? Sounds like a candidate...
 
