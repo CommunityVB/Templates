@@ -9,7 +9,7 @@
   "name": "Worker Service",
   "identity": "CommunityVB.Worker.Empty",
   "groupIdentity": "CommunityVB",
-  "shortName": "vbworker",
+  "shortName": "worker.vb",
   "tags": {
     "language": "VB",
     "type": "project"
