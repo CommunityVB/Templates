@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <PackageType>Template</PackageType>
+    <PackageVersion>0.0.1</PackageVersion>
+    <PackageId>CommunityVB.Avalonia.Templates</PackageId>
+    <Title>Avalonia Templates for VB</Title>
+    <Description>The missing Avalonia templates for VB.</Description>
+    <PackageTags>dotnet-new;templates;avalonia;vb</PackageTags>
+    <PackageProjectUrl>https://github.com/CommunityVB/Templates/avalonia</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/CommunityVB/Templates.git</RepositoryUrl>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <IncludeContentInPack>true</IncludeContentInPack>
+    <IncludeBuildOutput>false</IncludeBuildOutput>
+    <ContentTargetFolders>content</ContentTargetFolders>
+    <NoDefaultExcludes>true</NoDefaultExcludes>
+    <NoPackageAnalysis>true</NoPackageAnalysis>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="content/**/*" Exclude="content/**/bin/**;content/**/obj/**"/>
+    <Compile Remove="**/*" />
+  </ItemGroup>
+
+</Project>

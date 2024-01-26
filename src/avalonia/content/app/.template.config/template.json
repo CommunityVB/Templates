@@ -1,0 +1,134 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "CommunityVB",
+  "classifications": [ "Desktop", "Xaml", "Avalonia", "Windows", "Linux", "macOS" ],
+  "description": "A cross-platform Avalonia UI Application targeting Desktop",
+  "groupidentity": "Avalonia.App",
+  "identity": "Avalonia.App",
+  "name": "Avalonia .NET App",
+  "preferNameDirectory": true,
+  "shortName": "avalonia.app.vb",
+  "sourceName": "AvaloniaAppTemplate",
+  "defaultName": "AvaloniaApplication",
+  "tags": {
+    "language": "VB",
+    "type": "project"
+  },
+  "symbols": {
+    "Framework": {
+      "type": "parameter",
+      "description": "The target framework for the project.",
+      "datatype": "choice",
+      "choices": [
+        {
+          "choice": "net6.0",
+          "description": "Target net6.0"
+        },
+        {
+          "choice": "net7.0",
+          "description": "Target net7.0"
+        },
+        {
+          "choice": "net8.0",
+          "description": "Target net8.0"
+        }
+      ],
+      "replaces": "FrameworkParameter",
+      "defaultValue": "net8.0"
+    },
+    "skipRestore": {
+      "type": "parameter",
+      "datatype": "bool",
+      "description": "If specified, skips the automatic restore of the project on create.",
+      "defaultValue": "false"
+    },
+    "AvaloniaVersion": {
+      "type": "parameter",
+      "description": "The target version of Avalonia NuGet packages.",
+      "datatype": "choice",
+      "choices": [
+        {
+          "choice": "0.10.21",
+          "description": "Target 0.10.21"
+        },
+        {
+          "choice": "11.0.6",
+          "description": "Target 11.0.6 (Latest stable)"
+        }
+      ],
+      "replaces": "AvaloniaVersionTemplateParameter",
+      "defaultValue": "11.0.6"
+    },
+    "AvaloniaStableChosen": {
+      "type": "computed",
+      "value": "(AvaloniaVersion == \"11.0.6\")"
+    },
+    "UseCompiledBindings": {
+      "type": "parameter",
+      "description": "Defines if CompiledBindings should be enabled by default in the project (only supported in 11.0 version and newer).",
+      "datatype": "bool",
+      "displayName": "Use compiled Bindings",
+      "defaultValue": "true",
+      "isEnabled": "(AvaloniaVersion == \"11.0.6\")"
+    },
+    "HostIdentifier": {
+      "type": "bind",
+      "binding": "HostIdentifier"
+    }
+  },
+  "sources": [
+    {
+      "modifiers": [
+        {
+          "condition": "(AvaloniaStableChosen)",
+          "exclude": [
+            "App.v0.10.axaml"
+          ]
+        },
+        {
+          "condition": "(!AvaloniaStableChosen)",
+          "exclude": [
+            "App.axaml"
+          ]
+        }
+      ],
+      "rename": {
+        "App.v0.10.axaml": "App.axaml"
+      }
+    }
+  ],
+  "primaryOutputs": [
+    { "path": "AvaloniaAppTemplate.vbproj" },
+    {
+      "condition": "(HostIdentifier != \"dotnetcli\" && HostIdentifier != \"dotnetcli-preview\")",
+      "path": "MainWindow.axaml.vb"
+    },
+    {
+      "condition": "(HostIdentifier != \"dotnetcli\" && HostIdentifier != \"dotnetcli-preview\")",
+      "path": "MainWindow.axaml"
+    }
+  ],
+  "postActions": [
+    {
+      "id": "restore",
+      "condition": "(!skipRestore)",
+      "description": "Restore NuGet packages required by this project.",
+      "manualInstructions": [
+        { "text": "Run 'dotnet restore'" }
+      ],
+      "actionId": "210D431B-A78B-4D2F-B762-4ED3E3EA9025",
+      "continueOnError": true
+    },
+    {
+      "id": "editor",
+      "condition": "(HostIdentifier != \"dotnetcli\" && HostIdentifier != \"dotnetcli-preview\")",
+      "description": "Opens MainWindow in the editor",
+      "manualInstructions": [ ],
+      "actionId": "84C0DA21-51C8-4541-9940-6CA19AF04EE6",
+      "args": {
+        "files": "1;2"
+      },
+      "continueOnError": true
+    }
+  ]
+}
