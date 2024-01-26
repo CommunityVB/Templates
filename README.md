@@ -30,19 +30,6 @@ Many of us hang out on [Discord](https://discord.gg/Y8EH5fF6WG), some use [this 
 - To uninstall (or to update), `dotnet new uninstall ./` (and to update, repeat the `install`).
 - To my knowledge, these templates will be available in `dotnet new` as well as from within *Visual Studio*.
 
-## How to create a Template?
-
-- [How to create your own templates for dotnet new](https://devblogs.microsoft.com/dotnet/how-to-create-your-own-templates-for-dotnet-new/)
-- [Custom templates for dotnet new](https://learn.microsoft.com/en-us/dotnet/core/tools/custom-templates)
-- Create templates for the CLI (Tutorial)
-  - [Create an item template](https://learn.microsoft.com/en-us/dotnet/core/tutorials/cli-templates-create-item-template)
-  - [Create a project template](https://learn.microsoft.com/en-us/dotnet/core/tutorials/cli-templates-create-project-template)
-  - [Create a template package](https://learn.microsoft.com/en-us/dotnet/core/tutorials/cli-templates-create-template-package?pivots=dotnet-8-0)
-- [What are project and item templates?](https://learn.microsoft.com/en-us/visualstudio/ide/creating-project-and-item-templates?view=vs-2022)
-- [Locate and organize project and item templates](https://learn.microsoft.com/en-us/visualstudio/ide/how-to-locate-and-organize-project-and-item-templates?view=vs-2022)
-- [How to Create Your .NET Project Template](https://auth0.com/blog/create-dotnet-project-template/)
-- [Creating .NET Project Templates](https://code-maze.com/dotnet-project-templates-creation/)
-
 ## Automated builds?
 
 To make life a whole lot simpler, really need to utilize GitHub actions to automate the build process and potentially releases; so the structure of the repo needs to consider this.
@@ -54,6 +41,21 @@ Once we have something working, some testing under our belt and come up with a p
 ## Want to contribute?
 
 We welcome suggestions, bug reports, pull requests, help with documentation, testing, etc. So if you are interested, please use the tools here on GitHub or speak with us over on [Discord](https://discord.gg/Y8EH5fF6WG).
+
+## How to create a Template?
+
+Here are some helpful links for how to create templates from scratch...
+
+- [How to create your own templates for dotnet new](https://devblogs.microsoft.com/dotnet/how-to-create-your-own-templates-for-dotnet-new/)
+- [Custom templates for dotnet new](https://learn.microsoft.com/en-us/dotnet/core/tools/custom-templates)
+- Create templates for the CLI (Tutorial)
+  - [Create an item template](https://learn.microsoft.com/en-us/dotnet/core/tutorials/cli-templates-create-item-template)
+  - [Create a project template](https://learn.microsoft.com/en-us/dotnet/core/tutorials/cli-templates-create-project-template)
+  - [Create a template package](https://learn.microsoft.com/en-us/dotnet/core/tutorials/cli-templates-create-template-package?pivots=dotnet-8-0)
+- [What are project and item templates?](https://learn.microsoft.com/en-us/visualstudio/ide/creating-project-and-item-templates?view=vs-2022)
+- [Locate and organize project and item templates](https://learn.microsoft.com/en-us/visualstudio/ide/how-to-locate-and-organize-project-and-item-templates?view=vs-2022)
+- [How to Create Your .NET Project Template](https://auth0.com/blog/create-dotnet-project-template/)
+- [Creating .NET Project Templates](https://code-maze.com/dotnet-project-templates-creation/)
 
 ## Lack of ideas for new templates?
 
