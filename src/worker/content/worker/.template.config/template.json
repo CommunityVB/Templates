@@ -8,7 +8,7 @@
   ],
   "name": "Worker Service",
   "identity": "CommunityVB.Worker.Empty",
-  "groupIdentity": "CommunityVB",
+  "groupIdentity": "CommunityVB.Worker",
   "shortName": "worker.vb",
   "tags": {
     "language": "VB",
