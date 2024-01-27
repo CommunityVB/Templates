@@ -1,6 +1,6 @@
 {
   "$schema": "http://json.schemastore.org/template",
-  "author": "CommunityVB",
+  "author": "CommunityVB Contributors",
   "classifications": [ "Desktop", "Xaml", "Avalonia", "Web", "Mobile" ],
   "description": "A cross-platform Avalonia UI Application using the MVVM pattern targeting Desktop, Mobile and Browser with WebAssembly",
   "groupidentity": "Avalonia.App.CrossPlatform",
