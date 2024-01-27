@@ -1,7 +1,3 @@
-Option Explicit On 
-Option Strict On
-Option Infer On
-
 Imports Microsoft.Extensions.DependencyInjection
 Imports Microsoft.Extensions.Hosting
 

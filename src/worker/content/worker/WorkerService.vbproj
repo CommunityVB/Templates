@@ -2,7 +2,11 @@
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
-    <UserSecretsId>dotnet-Worker-83c66c42-f1e1-4bd7-babb-0f033ac1cd99</UserSecretsId>
+    <UserSecretsId>dotnet-WorkerService-83c66c42-f1e1-4bd7-babb-0f033ac1cd99</UserSecretsId>
+    <LangVersion>latest</LangVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionStrict>On</OptionStrict>
+    <OptionInfer>On</OptionInfer>
   </PropertyGroup>
 
   <ItemGroup>
