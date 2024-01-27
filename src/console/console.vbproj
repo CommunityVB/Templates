@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Title>Console</Title>
+    <PackageId>CommunityVB.Console</PackageId>
+    <Description>Console-related project templates for VB.</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="content/**/*" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)../../assets/vb.png" Pack="true" PackagePath="\" />
+  </ItemGroup>
+
+</Project>
