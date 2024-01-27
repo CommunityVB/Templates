@@ -2,6 +2,19 @@
 
 The *missing* (and new) project, item, multi-project, web and multi-item `dotnet new` templates for Visual Basic.
 
+## Templates?
+
+The plan is to eventually publish as nuget packages; but for now you'll need to have a local copy of the `./src` folder on your drive and manually install each package you wish to have available.
+
+| Name | Install |
+|---|---|
+| [Avalonia UI Templates](https://github.com/AvaloniaUI/Avalonia) - Avalonia is a framework for creating cross platform UI | `cd ./src/avalonia` ... `dotnet new install ./` |
+| Console (Async) | `cd ./src/console` ... `dotnet new install ./` |
+| [GtkSharp](https://github.com/GtkSharp/GtkSharp) | `dotnet new install "GtkSharp.Template.VBNet"` |
+| Worker Service | `cd ./src/worker` ... `dotnet new install ./` |
+
+To manually update, you will need to change to the original folder and execute `dotnet new uninstall ./` and repeat the manual install.
+
 ## What are Templates?
 
 We can use Templates to create ready-to-run projects and items that make it easy to start with a working set of code. The .NET comes with a set of default templates to cover the essential project types and items that we may require like the *Console App*, *Class Libraries*, *Windows Forms App*, etc.
